@@ -4,49 +4,36 @@
 # User-specific files
 *.suo
 *.user
-<<<<<<< HEAD
-*.sln.docstates
 
-=======
 *.userosscache
 *.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
-<<<<<<< HEAD
-x64/
-=======
-[Rr]eleases/
 x64/
 x86/
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 build/
 bld/
 [Bb]in/
 [Oo]bj/
 
-<<<<<<< HEAD
 # Roslyn cache directories
 *.ide/
 # Visual Studo 2015 cache/options directory
 .vs/
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-<<<<<<< HEAD
 #NUNIT
-=======
+
 # NUNIT
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 *.VisualState.xml
 TestResult.xml
 
@@ -146,7 +133,6 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-<<<<<<< HEAD
 ## TODO: Comment the next line if you want to checkin your
 ## web deploy settings but do note that will include unencrypted
 ## passwords
@@ -163,7 +149,6 @@ packages/*
 # This line needs to be after the ignore of the build folder
 # (and the packages folder if the line above has been uncommented)
 !packages/build/
-=======
 # TODO: Comment the next line if you want to checkin your web deploy settings 
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
@@ -177,7 +162,6 @@ packages/*
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 
 # Windows Azure Build Output
 csx/
@@ -190,9 +174,7 @@ AppPackages/
 <<<<<<< HEAD
 sql/
 *.Cache
-=======
 *.[Cc]ache
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
@@ -202,10 +184,7 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
-<<<<<<< HEAD
-=======
 bower_components/
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
 
 # RIA/Silverlight projects
 Generated_Code/
@@ -230,12 +209,10 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
-<<<<<<< HEAD
 # LightSwitch generated files
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
-=======
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
 
@@ -244,4 +221,3 @@ ModelManifest.xml
 
 # Visual Studio 6 workspace options file
 *.opt
->>>>>>> b7c25ab3bc6ef188fd3743478291c5088418ed41
