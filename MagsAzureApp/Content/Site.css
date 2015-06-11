@@ -1,0 +1,114 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 50px;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+  .moviecontainer { 
+     background: black;
+     float: left;
+     position: relative;
+     border-radius: 10px;
+     box-shadow: 5px 5px 2px;
+    width: 120px; 
+    height: 150px; 
+    margin: 15px;
+    overflow: hidden; 
+}
+
+  .moviecontainer:hover {
+      transform: scale(1.111, 1.111);
+      -webkit-transform: scale(1.111, 1.111);
+      -moz-transform: scale(1.111, 1.111);
+  }
+.fav-thumbnail { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 120px;
+}
+
+  .movieDetailsContainer { 
+     background: black;
+     float: left;
+     position: relative;
+     border-radius: 10px;
+     box-shadow: 5px 5px 2px;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+    .movieDetailsContainer:hover {
+      transform: scale(1.111, 1.111);
+      -webkit-transform: scale(1.111, 1.111);
+      -moz-transform: scale(1.111, 1.111);
+  }
+
+.DetailsContainer { 
+     float: left;
+     position: relative;
+     border-radius: 10px;
+     box-shadow: 5px 5px 2px;
+    width: 200px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+
+  .detail-thumbnail { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .centered-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .centered-text h1 {
+    text-align: center;
+    text-size: 20rem;
+    color: ghostwhite;
+  }
+
+.navbar-inverse {
+  /*background-color: #222222;*/
+  background-color: #2e2e2e !important;
+  border-color: #080808;
+}

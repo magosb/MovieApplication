@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MagsAzureApp.Models.Movie>
+
+
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="jumbotron">
+    <h1>Mags Movie App</h1>
+    <p class="lead">This is a ASP.NET application where you can give me movie tips. I will rate the movie once I have watched it and it will appear in the list of rated movies.
+         <a href='@Url.Action("Create", "Movies")'>
+                                    Please give me a movie tip!
+</a></p>
+    </div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>My Favorites</h2>
+    </div>
+    </div>
+<div class="row">
+
+        @foreach (var item in Model)
+        {
+            if (item != null && !String.IsNullOrEmpty(item.ImagePath))
+            {
+
+                <a href='@Url.Action("Details", "Movies", new { id = item.ID })'>
+                    <div class="moviecontainer">
+                        <img class="fav-thumbnail" src="@item.ImagePath" onerror="this.src='~/Content/images/video.png'"/>
+                        
+                    </div>
+                </a>
+            }
+
+        }
+</div>

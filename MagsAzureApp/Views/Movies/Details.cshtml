@@ -1,0 +1,76 @@
+﻿@model MagsAzureApp.Models.Movie
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Title)</h4>
+    <hr />
+    <a class="youtube" href="@Model.TrailerID">
+        <div class="movieDetailsContainer">
+                <img class="detail-thumbnail" src="@Model.ImagePath" alt="@Model.Title" />
+
+            <div class="centered-text"><h1>Youtube</h1></div>
+        </div> </a>
+        <div class="detailsContainer">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Producer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Producer)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ReleaseDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ReleaseDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Genre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Genre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Rating)
+                </dd>
+            </dl>
+        </div>
+
+        <dl>
+            <dt>
+                YoutubeLink
+            </dt>
+
+            <dd>
+                <a class="youtube" href="@Model.TrailerID">Youtube</a>
+            </dd>
+            <dd>
+                <div class="fb-like"
+                     data-share="true"
+                     data-width="100"
+                     data-show-faces="true">
+                </div>
+            </dd>
+
+        </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
